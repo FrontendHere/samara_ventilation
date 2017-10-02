@@ -1,0 +1,38 @@
+@font-face {
+    font-family: PT Sans; /* Имя шрифта */
+    src: url(../fonts/PT_Sans.ttf); /* Путь к файлу со шрифтом */
+   }
+ body{
+ 	font-family: 'PT Sans', sans-serif;
+ }
+.header{
+	background: url(../img/bg-header.png) no-repeat;
+	margin: 0 auto;
+	padding-top: 19px;
+	color: #fff;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.header-top{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+}
+.logo__img{
+	padding-right: 17px;
+}
+.header-top__center{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 19px;
+	text-align: center;
+}
+.header-top__phone{
+	font-size: 24px;
+	font-weight: bold;
+}
+.header-top__a-callback{
+	font-size: 17px;
+	text-decoration: underline;
+}
