@@ -18,15 +18,30 @@
 .header-top{
 	display: flex;
 	flex-direction: row;
-	align-content: space-between;
+	justify-content: space-between;
+}
+.logo__a{
+	color: #fff;
+	display: flex;
+	align-content: row;
 }
 .logo__img{
 	padding-right: 17px;
+}
+.logo__span{
+	font-weight: bold;
+	font-size: 23px;
+	align-self: center;
 }
 .header-top__center{
 	font-family: 'PT Sans', sans-serif;
 	font-size: 19px;
 	text-align: center;
+	width: 365px;
+	align-self: center;
+}
+.header-top__callback{
+	align-self: center;
 }
 .header-top__phone{
 	font-size: 24px;
@@ -35,4 +50,44 @@
 .header-top__a-callback{
 	font-size: 17px;
 	text-decoration: underline;
+	color: #fff;
+}
+.h1{
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	width: 933px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.h3{
+	font-size: 32px;
+	text-align: center;
+	padding-top: 24px;
+}
+.slogan{
+	margin: 0 auto;
+	text-align: center;
+	width: 189px;
+	padding-top: 30px;
+}
+.slogan__p{
+	font-size: 17px;
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+.form{
+	background-color: #246293;
+	padding: 28px 0;
+	border-radius: 5px;
+	width: 100%;
+	text-align: center;
+}
+.form__title{
+	font-size: 32px;
+	font-weight: bold;
+}
+.form__subtitle{
+	font-size: 24px;
+	padding-top: 9px;
 }
