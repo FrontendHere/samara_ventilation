@@ -7,4 +7,6 @@
 	 $('input,textarea').blur(function(){
 	   $(this).attr('placeholder',$(this).data('placeholder'));
 	 });
+	 //Карусель в партнерах
+	 $('partners__carousel').owlCarousel();
  });
