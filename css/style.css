@@ -9,6 +9,7 @@
 	background: url(../img/bg-header.png) no-repeat;
 	margin: 0 auto;
 	padding-top: 19px;
+	padding-bottom: 30px;
 	color: #fff;
 }
 .container{
@@ -51,6 +52,10 @@
 	font-size: 17px;
 	text-decoration: underline;
 	color: #fff;
+	transition: all 0.3s;
+}
+.header-top__a-callback:hover{
+	text-decoration: none;
 }
 .h1{
 	font-size: 50px;
@@ -58,7 +63,7 @@
 	text-align: center;
 	width: 933px;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 70px;
 }
 .h3{
 	font-size: 32px;
@@ -91,3 +96,131 @@
 	font-size: 24px;
 	padding-top: 9px;
 }
+.form__form{
+	padding: 17px 0;
+	display: flex;
+	justify-content: space-between;
+	width: 960px;
+	margin: 0 auto;
+}
+.form__input{
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 18px;
+	width: 300px;
+	border: 2px solid transparent;
+	transition: all 0.3s;
+}
+.form__input:hover{
+	border-color: #fcc427;
+}
+.button{
+	background-color: #fcc427;
+	font-size: 20px;
+	color: #282828;
+	font-weight: bold;
+	box-shadow: 0 3px 0 0 #e0ac1a;
+	cursor: pointer;
+	height: 59px;
+	transition: all 0.3s;
+}
+.button:hover{
+	box-shadow: 0 3px 0 0 #fc0;
+    color: #fff;
+}
+.button:active {
+    opacity: .7;
+}
+.form__form + p{
+	font-size: 16px;
+	text-align: center;
+}
+@media (max-width: 1199px){
+	.container{
+		width: 960px;
+	}
+	.form__form{
+		width: 920px;
+	}
+}
+@media (max-width: 991px){
+	.container{
+		width: 720px;
+	}
+	.logo__img{
+		height: 46px;
+	}
+	.logo__span{
+		font-size: 17px;
+	}
+	.header-top__center{
+		font-size: 17px;
+		width: 325px;
+	}
+	.header-top__phone{
+		font-size: 19px;
+	}
+	.header-top__a-callback{
+		font-size: 15px;
+	}
+	.h1{
+		font-size: 37px;
+		width: 700px;
+	}
+	.h3{
+		font-size: 27px;
+		padding-top: 8px;
+	}
+	.form__title{
+		font-size: 25px;
+	}
+	.form__subtitle{
+		font-size: 21px;
+	}
+	.form__form{
+		width: 700px;
+	}
+	.form__input{
+		width: 225px;
+		padding: 12px;
+		font-size: 16px;
+	}
+	.button{
+		height: 44px;
+	}
+}
+@media (max-width: 767px){
+	.container{
+		width: auto;
+		padding: 0 10px;
+	}
+	.header-top{
+		flex-direction: column;
+    	justify-content: normal;
+	}
+	.logo{
+		margin: 0 auto;
+    	width: 176px;
+	}
+	.header-top__center{
+		width: 270px;
+    	padding: 10px 0;
+	}
+	.h1 {
+	    font-size: 28px;
+	    width: 527px;
+	    padding-top: 30px;
+	}
+	.h3{
+		font-size: 21px;
+	}
+}
+
+
+/*******************************/
+/*******************************/
+
+/****       HEADER END      ****/
+
+/*******************************/
+/*******************************/
