@@ -84,7 +84,7 @@
 .form{
 	background-color: #246293;
 	padding: 28px 0;
-	border-radius: 5px;
+	border-radius: 15px;
 	width: 100%;
 	text-align: center;
 }
@@ -122,6 +122,8 @@
 	box-shadow: 0 3px 0 0 #e0ac1a;
 	cursor: pointer;
 	height: 59px;
+	border-radius: 5px;
+	width: 300px;
 	transition: all 0.3s;
 }
 .button:hover{
@@ -404,16 +406,264 @@
 /*******************************/
 
 
-.partners__desktop{
+.partners{
+	padding-bottom: 100px;
+}
+.partners__row{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0;
+}
+.partners__row img{
+	max-width: 18%;
+    margin: 0 1%;
+}
+.partners__carousel{
+	display: none !important;
+	padding-top: 30px;
+}
+.owl-item{
+	text-align: center;
+}
+.partners__carousel > div img,
+.owl-carousel .owl-item img{
+	width: auto;
+	display: inline;
+}
+.owl-dots {
+    margin-top: 15px;
+    position: relative;
+    left: 50%;
+    float: left;
+}
+.owl-dot{
+	float: left;
+    position: relative;
+    left: -50%;
+    margin: 0 5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #246293;
+}
+.owl-dots .active{	
+	background-color: #fcc427;
+}
+@media (max-width: 767px){
+	.partners__desktop{
+		display: none;
+	}
+	.partners__carousel{
+		display: block !important;
+	}
+}
+
+
+
+
+
+/*******************************/
+/*******************************/
+
+/****       PARTNERS END      ****/
+
+/*******************************/
+/*******************************/
+
+
+.bg-shadow{
+	background-color: #f7f7f7;
+	box-shadow: 0 3px 4px 0 #ededed;
+}
+.w-50{
+	width: 50%;
+}
+.t-center{
+	text-align: center;
+}
+.mx-auto{
+	margin-left: auto;
+	margin-right: auto;
+}
+.pb-20{
+	padding-bottom: 20px;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.h4{
+	font-size: 26px;
+	color: #282828;
+}
+.services{
+	padding-bottom: 60px;
+}
+.service{
+	border-radius: 15px;
+	display: flex;
+	color: #fff;
+	height: 459px;
+	margin: 20px auto;
+}
+.service-prom-ventilation{
+	background: url(../img/services/prom-ventilation.png) no-repeat;
+	background-size: cover;
+}
+.service-cafe-ventilation{
+	background: url(../img/services/cafe-ventilation.png) no-repeat;
+	background-size: cover;
+}
+.service-office-ventilation{
+	background: url(../img/services/office-ventilation.png) no-repeat;
+	background-size: cover;
+}
+.service-flat-ventilation{
+	background: url(../img/services/flat-ventilation.png) no-repeat;
+	background-size: cover;
+}
+.service__description{
+	background-color: rgba(46,94,136, 0.9);
+	border-radius: 0 15px 15px 0;
+	width: 587px;
+	margin-left: auto;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.service__h1{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	width: 70%;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+.service__ul{
+	padding-left: 67px;
+	font-size: 23px;
+	font-style: italic;
+}
+.service__ul p{
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.service__ul p:before{
+	display: block;
+	position: absolute;
+	content: '';
+	background: url(../img/check-mark.png) no-repeat;
+	width: 24px;
+    height: 23px;
+    background-size: contain;
+    margin-left: -40px;
+}
+.service__price{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.d-block{
+	display: block;
+}
+.h-49{
+	height: 49px;
+}
+@media (max-width: 1199px){
+	.h2.w-50{
+		width: auto;
+	}
+}
+@media (max-width: 991px){
+	.service__description{
+		width: 100%;
+		border-radius: 15px;
+	}
+	.service__h1{
+		font-size: 25px;
+	}
+	.service__ul{
+		font-size: 20px;
+		padding-left: 133px;
+	}
+}
+@media (max-width: 767px){
+	.service__ul{
+		padding-left: 20px;
+	}
+}
+@media (max-width: 575px){
+	.h2{
+		font-size: 20px;
+	}
+	.h4{
+		font-size: 18px;
+	}
+	.service{
+		height: auto;
+	}
+	.service__h1 {
+	    font-size: 20px;
+	}
+	.service__ul{
+		font-size: 16px;
+	}
+	.service__ul p{
+		padding-left: 20px;
+	}
+	.service__ul p:before{
+		width: 16px;
+    	height: 16px;
+    	margin-left: -20px;
+	}
+	.service__price{
+		font-size: 20px;
+	}
+}
+
+
+/*******************************/
+/*******************************/
+
+/****       SERVICES END      ****/
+
+/*******************************/
+/*******************************/
+
+
+.form > p{
+	color: #fff;
+}
+.mt-80{
+	margin-top: 80px;
+}
+.form__call-number{
+	font-size: 20px;
+}
+.form__call-number-phone{
+	font-size: 26px;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+@media (max-width: 767px){
+	font-size: 20px;
+}
+
+/*******************************/
+/*******************************/
+
+/*******************************/
+/*******************************/
+
+.partnership{}
+.partnership__inner{
+	border: 2px solid #dbdbdb;
+	border-radius: 15px;
 	display: flex;
 }
-.partners__desktop > div{
-	width: 20%;
-	position: relative;
-}
-.partners__desktop  img{
-	width: 20%;
-}
-.w100{
-	width: 100% !important;
+.partnership__logo{
+	border-right: 2px solid #dbdbdb;
+	width: 29%;
 }
