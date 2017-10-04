@@ -85,6 +85,32 @@
 	text-align: center;
 	padding-top: 16px;
 }
+@media (max-width: 575px){
+	.modal{
+		width: 98%;
+	}
+	.modal__h1{
+		font-size: 20px;
+		padding-bottom: 7px;
+	}
+	.modal__text{
+		font-size: 17px;
+		padding-bottom: 10px;
+	}
+	.modal__input{
+		font-size: 16px;
+		padding: 5px;
+		width: auto;
+	}
+	.modal__button.button{
+		font-size: 16px;
+		height: auto;
+		width: auto;
+	}
+	.modal__confidence{
+		font-size: 14px;
+	}
+}
 
 
 /*******************************/
