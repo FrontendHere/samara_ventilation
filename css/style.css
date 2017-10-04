@@ -5,6 +5,97 @@
  body{
  	font-family: 'PT Sans', sans-serif;
  }
+
+
+
+
+.bg-modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.2);
+	position: fixed;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.modal{
+	display: flex;
+    flex-direction: column;
+	position: fixed;
+	background-color: #fff;
+	width: 500px;
+	opacity: 0;
+	margin-top: -40px;
+	visibility: hidden;
+	z-index: 11;
+	padding-bottom: 40px; 
+	left:50%;
+	transform: translateX(-50%);
+	transition: all 0.5s;
+}
+.modal__close{
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #3c3c3c;
+	margin-left: auto;
+    margin-right: 18px;
+    line-height: 1;
+    padding-top: 15px;
+    transition: all 0.3s;
+}
+.modal__inner{
+	width: 350px;
+	margin: 0 auto;
+}
+.modal__h1{
+	font-size: 28px;
+	color: #282828;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 14px;
+}
+.modal__text{
+	font-size: 20px;
+	color: #282828;
+	text-align: center;
+	line-height: 28px;
+	padding-bottom: 23px;
+}
+.modal__form{
+	display: flex;
+	flex-direction: column;
+}
+.modal__input{
+	font-size: 18px;
+    border-radius: 5px;
+    padding: 16px;
+    width: 300px;
+    border: 1px solid #a5a5a5;
+    margin: 7px 0;
+    transition: all 0.3s;
+}
+.modal__button{
+	border-color: transparent;
+}
+.modal__confidence{
+	font-size: 16px;
+	color: #838383;
+	text-align: center;
+	padding-top: 16px;
+}
+
+
+/*******************************/
+/*******************************/
+
+/****       MODAL END      ****/
+
+/*******************************/
+/*******************************/
+
+
 .header{
 	background: url(../img/bg-header.png) no-repeat;
 	margin: 0 auto;

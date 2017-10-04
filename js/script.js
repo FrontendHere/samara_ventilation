@@ -59,4 +59,60 @@
 	 	}
 	 	
 	 });
+	 
+ 	
+	//Появление модального окна
+	$('.header-top__a-callback').click(function(e) {
+		e.preventDefault();
+		
+		document.getElementsByClassName('modal')[0].style.cssText = "opacity: 1;\
+			visibility: visible;\
+			margin-top: 0;\
+		";
+
+
+		document.getElementsByClassName('bg-modal')[0].style.cssText = "opacity: 1; \
+			visibility: visible;\
+		";
+
+		//Модальное окно по центру по вертикали
+	 	var windowHeight = document.documentElement.clientHeight;
+	 	var modalHeight = document.getElementsByClassName('modal')[0].offsetHeight;
+	 
+	 	var mtModal = (windowHeight - modalHeight)/2;
+
+	 	document.getElementsByClassName('modal')[0].style.marginTop = mtModal + "px";
+	});
+
+	$('.modal__close').click(function(e) {
+		e.preventDefault();
+
+		document.getElementsByClassName('modal')[0].style.cssText = "opacity: 0;\
+			visibility: hidden;\
+			margin-top: -40px;\
+		";
+
+
+		document.getElementsByClassName('bg-modal')[0].style.cssText = "opacity: 0; \
+			visibility: hidden;\
+		";
+
+	});
+
+	$('.bg-modal').click(function(e) {
+		e.preventDefault();
+
+		document.getElementsByClassName('modal')[0].style.cssText = "opacity: 0;\
+			visibility: hidden;\
+			margin-top: -40px;\
+		";
+
+
+		document.getElementsByClassName('bg-modal')[0].style.cssText = "opacity: 0; \
+			visibility: hidden;\
+		";
+
+	});
+
+
  });
