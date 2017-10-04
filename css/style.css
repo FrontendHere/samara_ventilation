@@ -793,3 +793,86 @@
 /*******************************/
 
 
+.sertificates__owl{
+	width: 1028px;
+	margin: 0 auto;
+}
+.sertificates__owl .owl-nav > div{
+	position: absolute;
+	top: 42%;
+}
+.sertificates__owl .owl-nav > div:hover{
+	opacity: .7;
+}
+.sertificates__owl .owl-prev{
+	width: 44px;
+	height: 44px;
+	left: -70px;
+	background: url(../img/arrow-prev.png) no-repeat;
+}
+.sertificates__owl .owl-next{
+	width: 44px;
+	height: 44px;
+	right: -70px;
+	background: url(../img/arrow-next.png) no-repeat;
+}
+@media (max-width: 1199px){
+	.sertificates__owl{
+		width: 820px;
+	}
+}
+@media (max-width: 991px){
+	.sertificates__owl{
+		width: 577px;
+	}
+}
+@media (max-width: 767px){
+	.sertificates__owl{
+		width: auto;
+	}
+	.sertificates__owl .owl-prev{
+		left: 0;
+	}
+	.sertificates__owl .owl-next{
+		right: 0;
+	}
+}
+
+
+
+
+/*******************************/
+/*******************************/
+
+/****       SERTIFICATES END      ****/
+
+/*******************************/
+/*******************************/
+
+
+.map{
+	padding-top: 80px;
+	position: relative;
+}
+.contacts{
+	width: 430px;
+	height: 500px;
+	background-color: #246293;
+	padding-top: 35px;
+	padding-bottom: 75px;
+	color: #fff;
+	border-radius: 15px;
+	position: absolute;
+	text-align: center;
+	top: 127px;
+}
+.h5{
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 46px;
+}
+.contacts__text p{
+	font-size: 20px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
