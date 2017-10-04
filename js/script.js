@@ -16,8 +16,18 @@
 	 });
 	 //Карусель патнеров
 	 $('.partnership__owl').owlCarousel({
-	 	loop: true,
-	 	nav: true,
-	 	items: 1
+	 	loop: true,	 	
+	 	navText: [],
+	 	dots: false,
+	 	items: 1,
+	 	margin: 10,
+	 	responsive:{
+	 		0:{
+	 			nav: false
+	 		},
+	 		768:{
+	 			nav: true
+	 		}
+	 	}
 	 });
  });

@@ -658,6 +658,10 @@
 /*******************************/
 
 .partnership{}
+.partnership__owl{
+	width: 1028px;
+	margin: 0 auto;
+}
 .partnership__inner{
 	border: 2px solid #dbdbdb;
 	border-radius: 15px;
@@ -665,5 +669,127 @@
 }
 .partnership__logo{
 	border-right: 2px solid #dbdbdb;
-	width: 29%;
+	width: 29%;	
+	text-align: center;
+	padding-bottom: 27px;
 }
+.partnership__logo-inner{
+	height: 216px;
+	display: flex;
+	justify-content: center;
+}
+.partnership__logo img{
+	max-height: 70%;
+	max-width: 80%;
+	align-self: center;
+}
+.partnership__organization{
+	font-size: 24px;
+	color: #282828;
+}
+.partnership__city{
+	font-size: 20px;
+	color: #646464;
+}
+.partnership__description{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.partnership__h1{
+	font-size: 22px;
+	font-weight: bold;
+	color: #282828;
+}
+.partnership__text{
+	font-size: 18px;
+	color: #282828;
+	padding-top: 35px;
+	padding-left: 40px;
+	padding-right: 150px;
+	text-align: left;
+}
+.partnership__owl .owl-nav{
+	display: block;
+}
+.partnership__owl .owl-nav > div{
+	position: absolute;
+	top: 42%;
+}
+.partnership__owl .owl-nav > div:hover{
+	opacity: .7;
+}
+.partnership__owl .owl-prev{
+	width: 44px;
+	height: 44px;
+	left: -70px;
+	background: url(../img/arrow-prev.png) no-repeat;
+}
+.partnership__owl .owl-next{
+	width: 44px;
+	height: 44px;
+	right: -70px;
+	background: url(../img/arrow-next.png) no-repeat;
+}
+@media (max-width: 1199px){
+	.partnership__owl{
+		width: 820px;
+	}
+	.partnership__logo{
+		min-width: 30%;
+	}
+	.partnership__organization{
+		font-size: 21px;
+	}
+	.partnership__text{
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+}
+@media (max-width: 991px){
+	.partnership__inner{
+		flex-direction: column;
+	}
+	.partnership__owl{
+		width: 577px;
+	}
+	.partnership__logo{
+		min-width: none;
+		width: auto;
+	}
+	.partnership__logo{
+		border: none;
+	}
+	.partnership__text{
+		text-align: center;
+	}
+}
+@media (max-width: 767px){
+	.partnership__owl {
+	    width: auto;
+	}
+	.partnership__organization {
+	    font-size: 19px;
+	}
+	.partnership__city {
+	    font-size: 17px;
+	}
+	.partnership__h1{
+		font-size: 19px;
+	}
+	.partnership__text{
+		font-size: 17px;
+	}
+}
+
+
+
+
+/*******************************/
+/*******************************/
+
+/****       PARTNERSHIP END      ****/
+
+/*******************************/
+/*******************************/
+
+
