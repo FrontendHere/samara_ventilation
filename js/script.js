@@ -30,6 +30,27 @@
 	 		}
 	 	}
 	 });
+	 //Карусель портфолио
+	 $('.examples__owl').owlCarousel({
+	 	loop: true,
+	 	dots: false,
+	 	navText: [],
+	 	//autoWidth: true,
+	 	margin: 10,
+	 	responsive:{
+	 		0:{
+	 			items: 1,
+	 			nav: false
+	 		},
+	 		768:{
+	 			nav: true
+	 		},
+	 		992:{
+	 			center: true,
+	 			nav: true
+	 		}
+	 	}
+	 });
 	 //Карусель сертификатов
 	 $('.sertificates__owl').owlCarousel({
 	 	loop: true,	 	
@@ -59,6 +80,9 @@
 	 	}
 	 	
 	 });
+
+	 //Slick
+
 	 
  	
 	//Появление модального окна
