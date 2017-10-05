@@ -86,8 +86,21 @@
 	 
  	
 	//Появление модального окна
-	$('.header-top__a-callback').click(function(e) {
+	$('.modal-open').click(function(e) {
 		e.preventDefault();
+
+		var serviceH1 =  $(this).parent('.service__description').find('.service__h1').html();
+
+		if(serviceH1 != undefined){
+			$('.modal__h1').css('font-size', 24);
+			$('.modal__h1').html(serviceH1);
+			$('[name=title]').val(serviceH1);
+		}
+		else{
+			$('.modal__h1').css('font-size', 28);
+			$('.modal__h1').html("Обратный звонок");
+			$('[name=title]').val('Обратный звонок');
+		}
 		
 		document.getElementsByClassName('modal')[0].style.cssText = "opacity: 1;\
 			visibility: visible;\
@@ -108,6 +121,7 @@
 	 	document.getElementsByClassName('modal')[0].style.marginTop = mtModal + "px";
 	});
 
+	//Закрытие модального окна
 	$('.modal__close').click(function(e) {
 		e.preventDefault();
 
@@ -137,6 +151,5 @@
 		";
 
 	});
-
 
  });
