@@ -31,6 +31,7 @@
 	z-index: 11;
 	padding-bottom: 40px; 
 	left:50%;
+	border-radius: 15px;
 	transform: translateX(-50%);
 	transition: all 0.5s;
 }
@@ -115,6 +116,21 @@
 	}
 }
 
+.sent-h1{
+	font-size: 22px;
+	font-family: 'PT Sans Bold', sans-serif;
+	color: #282828;
+	padding-top: 11px;
+	text-align: center;
+}
+.sent-p{
+	padding-top: 17px;
+	font-size: 22px;
+	color: #282828;
+	padding-bottom: 6px;
+	text-align: center;
+}
+
 
 /*******************************/
 /*******************************/
@@ -129,7 +145,8 @@
 	background: url(../img/bg-header.png) no-repeat;
 	margin: 0 auto;
 	padding-top: 19px;
-	padding-bottom: 30px;
+	padding-bottom: 27px;
+	background-position: center center;
 	color: #fff;
 }
 .container{
@@ -210,7 +227,7 @@
 }
 .form__title{
 	font-size: 32px;
-	font-weight: bold;
+	font-family: 'PT Sans Bold', sans-serif;
 }
 .form__subtitle{
 	font-size: 24px;
@@ -225,8 +242,8 @@
 }
 .form__input{
 	font-size: 18px;
-	border-radius: 5px;
-	padding: 18px;
+	border-radius: 10px;
+	padding: 12px 0 12px 18px;
 	width: 300px;
 	border: 2px solid transparent;
 	transition: all 0.3s;
@@ -235,15 +252,17 @@
 	border-color: #fcc427;
 }
 .button{
+	padding-left: 0;
 	background-color: #fcc427;
 	font-size: 20px;
 	color: #282828;
 	font-weight: bold;
 	box-shadow: 0 3px 0 0 #e0ac1a;
 	cursor: pointer;
-	height: 59px;
-	border-radius: 5px;
+	height: 48px;
+	border-radius: 10px;
 	width: 300px;
+	font-family: 'PT Sans Bold', sans-serif;
 	transition: all 0.3s;
 }
 .button:hover{
@@ -527,7 +546,7 @@
 
 
 .partners{
-	padding-bottom: 100px;
+	padding-bottom: 75px;
 }
 .partners__row{
 	display: flex;
@@ -604,8 +623,8 @@
 	background-color: #f7f7f7;
 	box-shadow: 0 3px 4px 0 #ededed;
 }
-.w-50{
-	width: 50%;
+.w-62{
+	width: 62%;
 }
 .t-center{
 	text-align: center;
@@ -631,7 +650,7 @@
 	border-radius: 15px;
 	display: flex;
 	color: #fff;
-	height: 459px;
+	height: 439px;
 	margin: 20px auto;
 }
 .service-prom-ventilation{
@@ -655,7 +674,7 @@
 	border-radius: 0 15px 15px 0;
 	width: 587px;
 	margin-left: auto;
-	padding-top: 40px;
+	padding-top: 23px;
 	padding-bottom: 30px;
 }
 .service__h1{
@@ -669,12 +688,12 @@
 .service__ul{
 	padding-left: 67px;
 	font-size: 23px;
-	font-style: italic;
 }
 .service__ul p{
 	padding-left: 40px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	font-family: 'PT Sans Italic', sans-serif;
 }
 .service__ul p:before{
 	display: block;
@@ -799,7 +818,7 @@
 }
 .partnership__logo{
 	border-right: 2px solid #dbdbdb;
-	width: 29%;	
+	min-width: 300px;
 	text-align: center;
 	padding-bottom: 27px;
 }
@@ -1050,6 +1069,12 @@
 	position: absolute;
 	text-align: center;
 	top: 127px;
+}
+.contacts i{
+	font-size: 25px;
+}
+.contacts .fa-envelope{
+	font-size: 21px;
 }
 .h5{
 	font-size: 30px;

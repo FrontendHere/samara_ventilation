@@ -89,11 +89,15 @@
 	$('.modal-open').click(function(e) {
 		e.preventDefault();
 
-		var serviceH1 =  $(this).parent('.service__description').find('.service__h1').html();
+		var serviceH1 =  $(this).parent('.service__description').find('.service__h1').html(),
+			serviceTitle = $(this).parent('.service__description').find('.service__h1').attr('data-title'),
+			modalWidth = $('.modal').clientWidth;
+			alert(modalWidth)
 
 		if(serviceH1 != undefined){
 			$('.modal__h1').css('font-size', 24);
-			$('.modal__h1').html(serviceH1);
+			$('.modal__text').html("Оставьте заявку на "+serviceTitle+". Мы свяжемся с Вами в ближайшее время.");
+			$('.modal__text').css({'width': modalWidth, 'padding-left': '7px', 'padding-right': '7px'})
 			$('[name=title]').val(serviceH1);
 		}
 		else{
@@ -151,5 +155,4 @@
 		";
 
 	});
-
  });

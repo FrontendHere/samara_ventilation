@@ -6,6 +6,8 @@
 	<title>Системы кондиционирования и вентиляции в Самаре и области</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="http://allfont.ru/allfont.css?fonts=pt-sans-italic" rel="stylesheet" type="text/css" />
+	<link href="http://allfont.ru/allfont.css?fonts=pt-sans-bold" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.default.css">
@@ -21,10 +23,10 @@
 			<div class="modal__inner">
 				<p class="modal__h1">Обратный звонок</p>
 				<p class="modal__text">Оставьте свои контакты и мы свяжемся с Вами в ближайшее время.</p>
-				<form class="modal__form">
-					<input type="hidden" name="title" value="">
+				<form class="modal__form" action="mail.php" method="post">					
 					<input type="text" class="modal__input" name="name" placeholder="Введите имя">
 					<input type="text" class="modal__input" name="phone" placeholder="Введите телефон">
+					<input type="hidden" name="title" value="">
 					<input type="submit" name="button" class="modal__input modal__button button" value="Заказать расчет">
 				</form>
 				<p class="modal__confidence">Ваша информация конфиденциальна и не передается 3-им лицам</p>
@@ -56,7 +58,7 @@
 				<div class="form">
 					<p class="form__title">Закажите бесплатный расчет стоимости проекта вентиляции</p>
 					<p class="form__subtitle">и получите квалифицированную консультацию инженера</p>
-					<form class="form__form">
+					<form class="form__form" action="mail.php" method="post">
 						<input type="text" class="form__input" name="name" placeholder="Введите имя">
 						<input type="text" class="form__input" name="phone" placeholder="Введите телефон">
 						<input type="submit" name="button" class="form__input button" value="Заказать расчет">
@@ -161,11 +163,11 @@
 		</div>
 		<section class="services bg-shadow">
 			<div class="container">
-				<h2 class="h2 w-50 t-center mx-auto pb-20">Выполняем полный комплекс работ от проекта до запуска</h2>
+				<h2 class="h2 w-62 t-center mx-auto pb-20">Выполняем полный комплекс работ от проекта до запуска</h2>
 				<p class="h4 mx-auto t-center pb-40">Проектирование, подбор, поставка, монтаж, обслуживание</p>
 				<section class="service service-prom-ventilation">
 					<div class="service__description">
-						<p class="service__h1">Промышленная вентиляция на складах и производстве</p>
+						<p class="service__h1" data-title="промышленную вентиляцию на складах и производстве">Промышленная вентиляция на складах и производстве</p>
 						<ul class="service__ul">
 							<li>
 								<p>Бесперебойная работа оборудования</p>
@@ -186,7 +188,7 @@
 				</section>
 				<section class="service service-cafe-ventilation">
 					<div class="service__description">
-						<p class="service__h1">Вентиляция в кафе, ресторане, гостинице и магазине </p>
+						<p class="service__h1" data-title="вентиляцию в кафе, ресторане, гостинице и магазине">Вентиляция в кафе, ресторане, гостинице и магазине</p>
 						<ul class="service__ul">
 							<li>
 								<p>Не выпускайте запахи из кухни</p>
@@ -204,7 +206,7 @@
 				</section>
 				<section class="service service-office-ventilation">
 					<div class="service__description">
-						<p class="service__h1">Вентиляция в офисе и торговом центре</p>
+						<p class="service__h1" data-title="вентиляцию в офисе и торговом центре">Вентиляция в офисе и торговом центре</p>
 						<ul class="service__ul">
 							<li>
 								<p>Комфортные условия для посетителей и работников</p>
@@ -222,7 +224,7 @@
 				</section>
 				<section class="service service-flat-ventilation">
 					<div class="service__description">
-						<p class="service__h1">Вентиляция в квартире и коттедже</p>
+						<p class="service__h1" data-title="вентиляцию в квартире и коттедже">Вентиляция в квартире и коттедже</p>
 						<ul class="service__ul">
 							<li>
 								<p>Дышите чистым воздухом</p>
@@ -241,9 +243,9 @@
 		</section>
 		<div class="container">
 			<div class="form mt-80">
-				<p class="form__title">Закажите бесплатный расчет стоимости проекта вентиляции</p>
-				<p class="form__subtitle">и получите квалифицированную консультацию инженера</p>
-				<form class="form__form">
+				<p class="form__title">Закажите бесплатный расчет стоимости проекта или монтажа</p>
+				<p class="form__subtitle">И через 5 минут с Вами свяжется специалист</p>
+				<form class="form__form" action="mail.php" method="post">
 							<input type="text" class="form__input" name="name" placeholder="Введите имя">
 							<input type="text" class="form__input" name="phone" placeholder="Введите телефон">
 							<input type="submit" name="button" class="form__input button" value="Заказать расчет">
@@ -323,9 +325,9 @@
 		</section>
 		<div class="container">
 			<div class="form mt-80">
-				<p class="form__title">Закажите бесплатный расчет стоимости проекта вентиляции</p>
-				<p class="form__subtitle">и получите квалифицированную консультацию инженера</p>
-				<form class="form__form">
+				<p class="form__title">Закажите бесплатный расчет стоимости проекта или монтажа</p>
+				<p class="form__subtitle">И через 5 минут с Вами свяжется специалист</p>
+				<form class="form__form" action="mail.php" method="post">
 							<input type="text" class="form__input" name="name" placeholder="Введите имя">
 							<input type="text" class="form__input" name="phone" placeholder="Введите телефон">
 							<input type="submit" name="button" class="form__input button" value="Заказать расчет">
@@ -351,7 +353,7 @@
 					<p class="contacts__question">
 						Остались вопросы?
 					</p>
-					<a href="#" class="contacts__callback">Задайте их нам</a>
+					<a href="#" class="contacts__callback modal-open">Задайте их нам</a>
 				</section>
 			</div>
 		</div>
@@ -372,5 +374,27 @@
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$("form").submit(function() { //Change
+	    var th = $(this);
+	    $.ajax({
+	      type: "POST",
+	      url: "mail.php", //Change
+	      data: th.serialize()
+	    }).done(function() {
+	      $('.modal__inner').html("<p class=sent-h1>Ваша заявка отправлена!</p><p class=sent-p>Мы свяжемся с вами в ближайшее время.</p>");
+	      $('.modal__inner').css('width','100%');
+	      //Модальное окно по центру по вертикали
+	 	var windowHeight = document.documentElement.clientHeight,
+	 		modalHeight = document.getElementsByClassName('modal')[0].offsetHeight,	 
+	 		mtModal = (windowHeight - modalHeight)/2;
+
+	 	document.getElementsByClassName('modal')[0].style.marginTop = mtModal + "px";
+
+	    });
+	    return false;
+	    
+	  });
+	</script>
 </body>
 </html>
